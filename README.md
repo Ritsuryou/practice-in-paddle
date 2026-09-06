@@ -1,36 +1,47 @@
-# 《神经网络与深度学习：案例与实践》  <br> Neural Networks and Deep Learning in Practice </br>
+# 神经网络与深度学习：案例与实践（第一版）
 
-> 📘 本仓库是《神经网络与深度学习：案例与实践》**第一版（2022，PaddlePaddle）的配套代码**。第二版已改用 PyTorch（2026 即将出版），见 **[nndl/nndl-practice](https://github.com/nndl/nndl-practice)**；系列主站 **[nndl.ai](https://nndl.ai)**。
+**2022 年版配套代码 · PaddlePaddle · 8 章实践**
 
-“我不能创造的东西，我就不理解（What I cannot create, I do not understand）。” 这是诺贝尔物理奖获得者理查德·费恩曼（Richard Feynman）在他办公室黑板上留下的一句话。深度学习的学习中也是如此，只有通过实践才能更深入地理解理论。
+[章节代码](#章节代码) · [配套课程](#配套课程) · [问题反馈](https://github.com/nndl/practice-in-paddle/issues) · [第二版 PyTorch 实现](https://github.com/nndl/nndl-practice) · [系列主站](https://nndl.ai/)
 
-## <img src="https://ai-studio-static-online.cdn.bcebos.com/b2837137c7284d32aa46319017cadea0cf5ce8a8a1004163b45d73916ceab1a6" width=5% /> 内容介绍
+本仓库保留《神经网络与深度学习：案例与实践》第一版的 PaddlePaddle 代码，供第一版读者与飞桨学习者使用。**第二版改用 PyTorch，扩展为 10 章，新增图神经网络、大语言模型与智能体，入口为 [nndl-practice](https://github.com/nndl/nndl-practice)。**
 
-**《神经网络与深度学习：案例与实践》** 是《神经网络与深度学习》（蒲公英书）的配套实践篇，在章节设计上和蒲公英书一一对应，建议您在学习过程中可以二者结合使用。《神经网络与深度学习：案例与实践》共8章，每个章节都包含**模型解读+案例实践** 两部分内容：
+## 本书内容
 
-* **模型解读** 主要聚焦如何从零开始一步步实现深度学习中的各种模型和算法，并结合简单的任务来加深读者对模型和算法的理解。
-* **案例实践** 主要强调如何使用飞桨预定义API来更好地完成实际任务，会涉及一些数据预处理问题。建议读者将本书和《神经网络与深度学习》结合阅读，在动手实践中更深入地理解深度学习的模型和原理。
+本书是《神经网络与深度学习》（蒲公英书）的配套实践篇。每章结合模型解读与案例实践：先从零实现模型和算法，再用飞桨提供的 API 完成实际任务，在数据处理、训练和评价中理解原理。
 
-## <img src="https://ai-studio-static-online.cdn.bcebos.com/b2837137c7284d32aa46319017cadea0cf5ce8a8a1004163b45d73916ceab1a6" width=5% /> 亮点优势
-* **紧密配套蒲公英书**：章节设计一一对应，以模型解读+案例实践的形式进行介绍。
-* **更适合深度学习的入门者使用**：实践案例使用飞桨框架编写，代码简洁，从零开始一步步进行深度学习的实践，搭建一个轻量级的机器学习框架以及相应的算子库来完成实际任务。
-* **术语翻译更加规范**：机器学习领域的很多名词存在难翻译和乱翻译的现象，邱锡鹏教授与周志华老师、李航老师、李沐、阿斯顿·张一起讨论和确定了机器学习相关术语的翻译问题，本书中采用了相关术语的最新译法。
-* **全方位深度学习入门及提高解决方案**：提供免费的视频课程、丰富题库和实训环境，邱锡鹏教授和百度飞桨研发团队亲自讲解示范。
-<center><img src="https://ai-studio-static-online.cdn.bcebos.com/0592ee2145e24c57b0eaa01554c7b704cd952cd3fafe4c0da2ff0b35303020f0" width=40% /></center>
+适合有 Python 基础、希望动手学习深度学习的读者。可结合理论书阅读，也可按下方目录选择感兴趣的章节。
 
-## <img src="https://ai-studio-static-online.cdn.bcebos.com/b2837137c7284d32aa46319017cadea0cf5ce8a8a1004163b45d73916ceab1a6" width=5% /> 资源获取
+## 章节代码
 
-* 推荐您使用Jupyter Notebook来本地运行本书的代码，[代码下载以及使用方法都可以参考本书对应的GitHub项目](https://github.com/nndl/practice-in-paddle)。
+| 章 | 代码入口 |
+|---|---|
+| 1 | [实践基础](chap1实践基础/) |
+| 2 | [机器学习概述](chap2机器学习概述/) |
+| 3 | [线性模型](chap3线性模型/) |
+| 4 | [前馈神经网络](chap4前馈神经网络/) |
+| 5 | [卷积神经网络](chap5卷积神经网络/) |
+| 6 | [循环神经网络](chap6循环神经网络/) |
+| 7 | [网络优化与正则化](chap7网络优化与正则化/) |
+| 8 | [注意力机制](chap8注意力机制/) |
 
-* 您也可以登录[飞桨AI Studio实训平台](https://aistudio.baidu.com/aistudio/index)在线运行本书代码，并获取相应的视频课程。视频课程链接如下：
+## 使用代码
 
-1）**《神经网络与深度学习》视频课程（邱锡鹏老师主讲）**：https://aistudio.baidu.com/aistudio/education/group/info/25876
+```bash
+git clone https://github.com/nndl/practice-in-paddle.git
+cd practice-in-paddle
+```
 
-2）**《神经网络与深度学习：案例与实践》视频课程 & 在线实训环境**（飞桨高级研发工程师主讲）：
-https://aistudio.baidu.com/aistudio/education/group/info/25793
+使用 Jupyter Notebook 打开对应章节中的 `.ipynb` 文件，按 Notebook 内的环境与数据准备说明运行。[数据集说明](dataset/README.md)提供配套数据入口。第一版环境与第二版不同，请按所用版本的说明准备依赖。
 
-<center><img src="https://ai-studio-static-online.cdn.bcebos.com/dd17fa3d77f84753abc2dd24da7e72d2eac51c8d9cf04049912ab521c412ef8b" width=60% /></center>
+## 配套课程
 
-## <img src="https://ai-studio-static-online.cdn.bcebos.com/b2837137c7284d32aa46319017cadea0cf5ce8a8a1004163b45d73916ceab1a6" width=5% /> 问题反馈
+- [《神经网络与深度学习》视频课程](https://aistudio.baidu.com/aistudio/education/group/info/25876)：邱锡鹏主讲。
+- [《案例与实践》视频课程与在线实训](https://aistudio.baidu.com/aistudio/education/group/info/25793)：飞桨研发工程师讲解实践内容。
+- [飞桨 AI Studio](https://aistudio.baidu.com/aistudio/index)：课程与在线 Notebook 平台。
 
-如果您在学习过程中有任何疑问，或者想与其他志同道合的伙伴交流，更深入了解技术细节，**[可以在项目的Issue中提出](https://github.com/nndl/practice-in-paddle/issues)**。
+## 提问与反馈
+
+第一版代码问题请提交到[本仓库 Issues](https://github.com/nndl/practice-in-paddle/issues)，注明章节、Notebook、PaddlePaddle 与 Python 版本、复现步骤和报错。学习交流可前往[系列讨论区](https://github.com/nndl/nndl-discussion/discussions)。
+
+[第二版电子书与代码](https://github.com/nndl/nndl-practice) · [理论书第一版资料](https://github.com/nndl/nndl/tree/main/legacy/nndl-v1) · [系列选书路径](https://nndl.ai/reading-path/)
